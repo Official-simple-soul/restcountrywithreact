@@ -1,0 +1,12 @@
+
+            <nav>
+                <ul className="d-flex align-items-center mb-0 list-unstyled">
+                    <li className="mx-2 mb-0 fw-bold">HOME</li>
+                    <li className="mx-2 mb-0 fw-bold">FILTER BY REGION</li>
+                </ul>
+            </nav>
+
+
+
+
+            
