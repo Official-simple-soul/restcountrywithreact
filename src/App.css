@@ -14,3 +14,15 @@ header {
 .card {
   height: 97%;
 }
+
+.light-text {
+  color: white !important;
+}
+
+.card {
+  border-radius: 0%;
+}
+
+.white {
+  color: white !important;
+}
