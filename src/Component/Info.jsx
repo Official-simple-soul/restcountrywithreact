@@ -89,7 +89,7 @@ const Info = () => {
                                                                     name = element.name  
                                                                 }
                                                             })
-                                                        return <button classNameName="px-2 m-2 rounded"><Link to={`/country/${name}`} style={{textDecoration:'none', color:'black'}}>{borderFull}</Link></button>
+                                                        return <button className="px-2 m-2 rounded"><Link to={`/country/${name}`} style={{textDecoration:'none', color:'black'}}>{borderFull}</Link></button>
                                                         })}
                                                     </div>
                                                 </div>

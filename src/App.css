@@ -23,10 +23,6 @@ header {
   border-radius: 0%;
 }
 
-.white {
-  color: white !important;
-}
-
 .inputTarget:focus {
   outline: none;
 }
@@ -41,6 +37,7 @@ header {
   border: 8px dotted black;
   border-radius: 50%;
   animation: roll 5s infinite;
+  background-color: rgba(255, 255, 255, 0.721);
 }
 
 @keyframes roll {
@@ -53,4 +50,14 @@ header {
   100% {
       transform: rotate(360deg);
   }
+}
+
+.info-link {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 100;
+  cursor: pointer;
 }
