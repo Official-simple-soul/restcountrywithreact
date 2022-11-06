@@ -34,7 +34,6 @@ const Info = () => {
                 {
                     info.map(item=> {
                         const {
-                            numericCode,
                             flag,
                             name,
                             population,
