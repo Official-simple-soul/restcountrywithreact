@@ -30,10 +30,11 @@ const Info = () => {
     return (
         <>
             
-            <section className="country">
+            <section classNameName="country">
                 {
                     info.map(item=> {
                         const {
+                            numericCode,
                             flag,
                             name,
                             population,
@@ -46,21 +47,21 @@ const Info = () => {
                             subregion,
                             borders
                             } = item
-                      return <section id="view">
-                                <div class="container">
-                                        <p class="shadow text-center p-1 col-4 col-lg-1 my-5" onClick={linkTo}><i class="fa-solid fa-arrow-left me-4"></i><span class="">Back</span></p>
-                                        <div class="row">
-                                        <div class="col-md-6 mb-3">
-                                            <div class="card border-0 shadow bg-transparent">
+                      return <section id="view" key={numericCode}>
+                                <div className="container">
+                                        <p className="shadow text-center p-1 col-4 col-lg-1 my-5" onClick={linkTo}><i className="fa-solid fa-arrow-left me-4"></i><span className="">Back</span></p>
+                                        <div className="row">
+                                        <div className="col-md-6 mb-3">
+                                            <div className="card border-0 shadow bg-transparent">
                                                 <img src={flag} alt="" id="flag"/>
                                             </div>
                                         </div>
-                                        <div class="col-md-6 new mb-3">
-                                            <div class="card border-0 bg-transparent">
+                                        <div className="col-md-6 new mb-3">
+                                            <div className="card border-0 bg-transparent">
                                                 <h3 id="name">{name}</h3>
-                                                <div class="row py-4">
-                                                    <div class="col-12 col-lg-6 mb-3">
-                                                        <div class="card border-0 bg-transparent">
+                                                <div className="row py-4">
+                                                    <div className="col-12 col-lg-6 mb-3">
+                                                        <div className="card border-0 bg-transparent">
                                                             <p id="native">Native: {nativeName}</p>
                                                             <p id="population">Population: {population}</p>
                                                             <p id="region">Region: {region}</p>
@@ -68,17 +69,17 @@ const Info = () => {
                                                             <p id="capital">Capital: {capital}</p>
                                                         </div>
                                                     </div>
-                                                    <div class="col-12 col-lg-6">
-                                                        <div class="card border-0 bg-transparent">
+                                                    <div className="col-12 col-lg-6">
+                                                        <div className="card border-0 bg-transparent">
                                                             <p id="domain">Domain: {topLevelDomain}</p>
                                                             <p id="currency">Currency: {currencies[0].code}</p>
                                                             <p id="language">Languages: {languages.map(item=>`${item.name},`)}</p>
                                                         </div>
                                                     </div>
                                                 </div>
-                                                <div className="d-flex justify-content-start align-items-center flex-wrap text-start">
-                                                    <h5 class="me-3">Borders</h5>
-                                                    <div class="borders d-flex justify-content-start align-items-center flex-wrap">
+                                                <div classNameName="d-flex justify-content-start align-items-center flex-wrap text-start">
+                                                    <h5 className="me-3">Borders</h5>
+                                                    <div className="borders d-flex justify-content-start align-items-center flex-wrap">
                                                         {
                                                         borders.map((item)=> {
                                                             let borderFull = '', name = ''
@@ -88,7 +89,7 @@ const Info = () => {
                                                                     name = element.name  
                                                                 }
                                                             })
-                                                        return <button className="px-2 m-2 rounded"><Link to={`/country/${name}`} style={{textDecoration:'none', color:'black'}}>{borderFull}</Link></button>
+                                                        return <button classNameName="px-2 m-2 rounded"><Link to={`/country/${name}`} style={{textDecoration:'none', color:'black'}}>{borderFull}</Link></button>
                                                         })}
                                                     </div>
                                                 </div>

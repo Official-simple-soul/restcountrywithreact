@@ -43,7 +43,7 @@ const Countries = () => {
         return (
             <>
                 <div className="load d-flex justify-content-center align-items-center">
-                <div class="rotate"></div>
+                <div className="rotate"></div>
                 </div>
             </>
         )
@@ -59,7 +59,7 @@ const Countries = () => {
     
                         return (
                             
-                            <div className="col-lg-3 col-md-6 col-12" id={numericCode}>
+                            <div className="col-lg-3 col-md-6 col-12" id={numericCode} key={numericCode}>
                                 <Link to={`/country/${name}`} className='text-decoration-none text-dark cardlink'>
                                 <div className="card bg-transparent shadow">
                                     <img src={flag} alt={name} height='200px' width='100%'/>
@@ -125,7 +125,7 @@ const Countries = () => {
 
                     return (
                         
-                        <div className="col-lg-3 col-md-6 col-12" id={numericCode}>
+                        <div className="col-lg-3 col-md-6 col-12" id={numericCode} key={numericCode}>
                             <Link to={`/country/${name}`} className='text-decoration-none text-dark cardlink'>
                             <div className="card bg-transparent shadow">
                                 <img src={flag} alt={name} height='200px' width='100%'/>
@@ -159,7 +159,7 @@ const Countries = () => {
     
                         return (
                             
-                            <div className="col-lg-3 col-md-6 col-12" id={numericCode}>
+                            <div className="col-lg-3 col-md-6 col-12" id={numericCode} key={numericCode}>
                                 <Link to={`/country/${name}`} className='text-decoration-none text-dark cardlink'>
                                 <div className="card bg-transparent shadow">
                                     <img src={flag} alt={name} height='200px' width='100%'/>
@@ -193,7 +193,7 @@ const Countries = () => {
     
                         return (
                             
-                            <div className="col-lg-3 col-md-6 col-12" id={numericCode}>
+                            <div className="col-lg-3 col-md-6 col-12" id={numericCode} key={numericCode}>
                                 <Link to={`/country/${name}`} className='text-decoration-none cardlink text-dark'>
                                 <div className="card bg-transparent shadow">
                                     <img src={flag} alt={name} height='200px' width='100%'/>
