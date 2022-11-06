@@ -1,6 +1,5 @@
 import Main from './Main'
-import Filter from './Filter'
-import Header from './Header'
+import {Filter} from './Filter'
 
 
 const Home = () => {
