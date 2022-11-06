@@ -47,6 +47,10 @@ const Info = () => {
                             subregion,
                             borders
                             } = item
+                            let newBorders = []
+                            if(borders){
+                                newBorders = borders
+                            }
                       return <section id="view" key={numericCode}>
                                 <div className="container">
                                         <p className="shadow text-center p-1 col-4 col-lg-1 my-5" onClick={linkTo}><i className="fa-solid fa-arrow-left me-4"></i><span className="">Back</span></p>
@@ -81,7 +85,7 @@ const Info = () => {
                                                     <h5 className="me-3">Borders</h5>
                                                     <div className="borders d-flex justify-content-start align-items-center flex-wrap">
                                                         {
-                                                        borders.map((item)=> {
+                                                        newBorders.map((item)=> {
                                                             let borderFull = '', name = ''
                                                             infoB.map((element)=>{
                                                                 if(element.alpha3Code === item){

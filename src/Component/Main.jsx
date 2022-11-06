@@ -43,7 +43,7 @@ const Countries = () => {
         return (
             <>
                 <div className="load d-flex justify-content-center align-items-center">
-                <div className="rotate"></div>
+                    <div className="rotate"></div>
                 </div>
             </>
         )
